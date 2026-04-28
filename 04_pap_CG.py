@@ -118,15 +118,16 @@ def algebra_dim(kind: str, n: int) -> int:
 
 # ------------------- Model & Repr ------------------------
 def load_model(cfg: Cfg):
-    if False :
+    if True :
         log.info(f"Loading base model {cfg.model_name} (fp32)...")
         model = AutoModelForCausalLM.from_pretrained(
             cfg.model_name, torch_dtype=torch.float32, low_cpu_mem_usage=True
         )
-    log.info(f"Loading base model {cfg.model_name} (fp16)...")
-    model = AutoModelForCausalLM.from_pretrained(
-        cfg.model_name, torch_dtype=torch.float16, low_cpu_mem_usage=True
-    )
+    else :
+        log.info(f"Loading base model {cfg.model_name} (fp16)...")
+        model = AutoModelForCausalLM.from_pretrained(
+            cfg.model_name, torch_dtype=torch.float16, low_cpu_mem_usage=True
+        )
 
     model.to(cfg.device).eval()
     tok = AutoTokenizer.from_pretrained(cfg.model_name, use_fast=True)
