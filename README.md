@@ -3,7 +3,7 @@
 Code for the paper:
 
 **"Structure-Preserving Policy Optimisation via Compact Lie Algebra Constraints"**
-Sooraj K.C and Vivek Mishra, Neural Networks (Elsevier), 2026.
+Sooraj K.C and Vivek Mishra, AIMS Mathematics, 2026.
 
 
 ## What this repo contains
