@@ -1,7 +1,21 @@
-torch>=2.0.0
-numpy>=1.24.0
-scipy>=1.10.0
-transformers>=4.30.0
-matplotlib>=3.7.0
-bitsandbytes>=0.41.0
-accelerate>=0.20.0
+# ---------------------------------------------------------------------------
+# Tier 1 -- analysis and verification.  No GPU, no model downloads.
+# Enough for: verify_math.py, sppg_analysis.py, sppg_defense/
+# ---------------------------------------------------------------------------
+numpy>=1.24
+scipy>=1.10
+pandas>=2.0
+mpmath>=1.3          # arbitrary precision, used by the exponential-witness check
+
+# ---------------------------------------------------------------------------
+# Tier 2 -- additionally required to run experiments (GPU, hours)
+# ---------------------------------------------------------------------------
+torch>=2.1
+transformers>=4.35
+matplotlib>=3.7      # figures
+bitsandbytes>=0.41   # only for r13b (Mistral-7B), load_in_4bit=True
+accelerate>=0.26     # only for r13b -- required by device_map="auto"
+
+# r13b also downloads ~15 GB of mistralai/Mistral-7B-v0.1 on first use.
+# Check all of this before starting a long queue (safe to run mid-sweep):
+#     python3 tools/preflight_r13b.py

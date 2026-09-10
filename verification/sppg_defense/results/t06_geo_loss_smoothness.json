@@ -1,0 +1,37 @@
+{
+  "name": "t06_geo_loss_smoothness",
+  "claim": "TH-6 / Lemma lem:geo_smooth: l_geo is 1-smooth on so(n), also in the ambient Proj_so parameterisation",
+  "passed": true,
+  "summary": {
+    "configurations tested": 50,
+    "lambda_max values computed": 75,
+    "violations of lambda_max <= 1 (must be 0)": 0,
+    "max lambda_max over all configurations": 0.46292225222145655,
+    "max lambda_max, ALGEBRA parameterisation": 0.46292225222145655,
+    "max lambda_max, AMBIENT Proj_so parameterisation": 0.329674967400463,
+    "ambient panel genuinely exercises Proj_so (not a no-op)": true,
+    "closed-form gradient vs finite differences, max abs error": 9.632283859417612e-11,
+    "Lanczos vs full-Hessian cross-check, max abs difference": 1.510324064979418e-06,
+    "dims: full Hessian": [
+      4,
+      8,
+      16
+    ],
+    "dims: Lanczos (dim so(32)=496, so(64)=2016, gl(64)=4096)": [
+      4,
+      8,
+      16,
+      32,
+      64
+    ],
+    "radii tested": [
+      0.0,
+      0.5,
+      2.0,
+      10.0,
+      100.0
+    ],
+    "|c_geo|-smoothness max rel error (c in +-{0.1,1,3,10})": 3.506618697760262e-07,
+    "tolerance on the bound (finite-difference Hessian accuracy)": 0.0001
+  }
+}

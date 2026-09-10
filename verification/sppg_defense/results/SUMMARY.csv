@@ -1,0 +1,8 @@
+module,claim,passed,seconds
+t01_softmax_smoothness,TH-1  Lemma lem:softmax_lipschitz(i),True,4.6
+t05_frechet_bounds,TH-5  Lemma lem:exp_derivative_bounds,True,7.8
+t06_geo_loss_smoothness,TH-6  Lemma lem:geo_smooth,True,24.2
+t07_projected_gd,TH-7  Theorem thm:nonconvex,True,20.8
+t08_robbins_monro,TH-8  Theorem thm:stochastic,True,8.8
+t09_pullback_bound,TH-9  Prop prop:dichotomy_app(i),True,14.9
+t10_exponential_witness,TH-10/15 Prop prop:dichotomy_app(ii),True,0.5

@@ -1,0 +1,27 @@
+{
+  "name": "t09_pullback_bound",
+  "claim": "TH-9 / Prop prop:dichotomy_app(i): ||Hess F|| <= L_f + G_f on so(n), radius- and n-independent",
+  "passed": true,
+  "summary": {
+    "cells tested (n x radius)": 20,
+    "bound L_f + G_f (computed from the sampled f)": 2.0,
+    "assumed G_f, L_f dominate their empirical suprema": true,
+    "empirical sup ||grad f||_F vs G_f": "0.3019 <= 1.0000",
+    "empirical sup |Hess f[E,E]| vs L_f": "0.0318 <= 1.0000",
+    "violations (must be 0)": 0,
+    "max ||Hess F||_op / bound, random theta": 0.07944170166866457,
+    "max ||Hess F||_op / bound, ADVERSARIAL search": 0.3157323510718897,
+    "tightest bound this search would still not violate": "0.631 (claim is 2.0)",
+    "max normalised upward trend vs log radius (must be <= 0)": -0.07022943124843783,
+    "radii tested": "0.1 .. 1000",
+    "dims tested": [
+      4,
+      8,
+      16,
+      32
+    ],
+    "2x2 witness max |F''| at analytic maximisers (exact 0.5)": 0.5000014365504531,
+    "2x2 witness error vs analytic": 1.4365504531488327e-06,
+    "2x2 witness shows G_f term is NOT removable (L_f = 0 there)": true
+  }
+}

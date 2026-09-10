@@ -1,0 +1,24 @@
+{
+  "name": "t05_frechet_bounds",
+  "claim": "TH-5 / Lemma lem:exp_derivative_bounds: ||Dexp||<=1 and ||D2exp||<=1 on so(n), uniformly in radius and n",
+  "passed": true,
+  "summary": {
+    "so(n) rows (1st derivative)": 200,
+    "so(n) rows with a 2nd derivative": 150,
+    "so(n) rows skipped (n > 64), accounted for exactly": true,
+    "so(n) 1st-derivative violations (must be 0)": 0,
+    "so(n) 2nd-derivative violations (must be 0)": 0,
+    "so(n) max ratio1 (<= 1)": 1.0000000000000184,
+    "so(n) max ratio2 (<= 1)": 0.7071067814301976,
+    "so(n) radii tested": "0.1 .. 1000",
+    "so(n) dims tested": "2 .. 256",
+    "so(n) max finite-difference error estimate": 7.902042112348531e-10,
+    "CONTRAST off so(n): max ratio1 (unbounded)": 15321.497976885625,
+    "CONTRAST off so(n): max ratio2 (unbounded)": 1083.9736705587336,
+    "CONTRAST growth factor of ratio1, largest/smallest radius": {
+      "sym": 4.436525673239934,
+      "gl": 1.975400781114734
+    },
+    "2nd-derivative spread over FD steps h in [1e-5, 1e-3]": 7.123135414843773e-12
+  }
+}

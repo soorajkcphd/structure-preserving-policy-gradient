@@ -1,0 +1,28 @@
+{
+  "name": "t08_robbins_monro",
+  "claim": "TH-8 / Theorem thm:stochastic: a.s. liminf stationarity under sum a = inf, sum a^2 < inf",
+  "passed": true,
+  "summary": {
+    "subspace / dim / steps / runs": "so(8) d=28 T=40000 runs=30",
+    "oracle E[ghat|F_t] = grad exactly (mean-zero sphere noise)": true,
+    "A: alpha=0.05 floor PREDICTED (closed form)": 0.060124544560127044,
+    "A: alpha=0.05 floor OBSERVED": 0.06010707079040127,
+    "A: alpha=0.05 relative error": 0.0002906262301629361,
+    "A: alpha=0.30 floor PREDICTED (closed form)": 0.5923500578073039,
+    "A: alpha=0.30 floor OBSERVED": 0.5927913674801358,
+    "A: alpha=0.30 relative error": 0.0007450149907396804,
+    "A: alpha=0.30 NAIVE leading-order formula, relative error": 0.43210702946456114,
+    "A: discrimination (naive err / measured err) at alpha=0.30": 579.997764924902,
+    "A: Robbins-Monro tail E||grad||^2": 0.00022187402442693234,
+    "A: how far RM sits below the alpha=0.05 floor (x)": 270.9850543136801,
+    "B(iii): RM median running-min ||grad||": 0.04638827066015572,
+    "B(iii): CONST median running-min ||grad||": 0.03142797698061688,
+    "B(ii): RM step-mass-weighted tail ratio (-> 0)": 0.00395916847301565,
+    "B(ii): SQRT weighted tail ratio": 0.001017602540243263,
+    "B(ii): CONST weighted tail ratio": 0.12440334356053714,
+    "B(ii): RM RAW ratio (schedule-dominated; shown to expose why it cannot discriminate)": 0.0008075060778231603,
+    "B: NOTE -- the CONST arm here is NOT a necessity demonstration": "on a benign nonconvex landscape a well-tuned constant step also converges over a finite horizon, so it can look as good as or better than RM on these statistics. The necessity of sum alpha^2 < inf is established rigorously in PART A, against a closed-form noise floor, not by this comparison.",
+    "B(i): RM tail std of f": 0.004737599270487119,
+    "B(i): CONST tail std of f": 0.001126518387739547
+  }
+}

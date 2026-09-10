@@ -1,0 +1,25 @@
+{
+  "name": "t01_softmax_smoothness",
+  "claim": "TH-1 / Lemma lem:softmax_lipschitz(i): log Z is B^2-smooth, radius-independent, on ANY linear subspace",
+  "passed": true,
+  "summary": {
+    "cells_tested": 336,
+    "bound violations vs ambient B^2 (must be 0)": 0,
+    "bound violations vs in-subspace B_eff^2 (must be 0)": 0,
+    "max lambda_max / B_eff^2 (random features)": 0.5313250320831839,
+    "ADVERSARIAL sup over the sphere: max ratio to B_eff^2": 0.6309362663439978,
+    "ADVERSARIAL sup violations (must be 0)": 0,
+    "matched RANDOM-direction max on the same configs": 0.6350757248441796,
+    "gain of adversarial search over random directions (x)": 1.217743307716853,
+    "tightest bound the adversarial search would still not violate": "0.631 x B^2",
+    "exact witness max |lambda_max/B^2 - 1| over all radii": 8.881784197001252e-16,
+    "exact witness subspaces (all attain the bound at every radius)": [
+      "gl",
+      "sl",
+      "so",
+      "sym"
+    ],
+    "witness radii span": "0.01 .. 10000",
+    "diagnostic: max dlog(lmax)/dlog(R), random features (may be >0, see note)": 0.27125157422833285
+  }
+}

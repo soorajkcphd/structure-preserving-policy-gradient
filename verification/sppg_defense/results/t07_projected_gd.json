@@ -1,0 +1,36 @@
+{
+  "name": "t07_projected_gd",
+  "claim": "TH-7 / Theorem thm:nonconvex: descent inequality, O(1/T) min squared restricted gradient, eta<2/L",
+  "passed": true,
+  "summary": {
+    "subspace / n / dim": "so(16) dim=120",
+    "(a) per-step descent-inequality violations (must be 0)": 0,
+    "(a) runs that diverged despite eta < 2/L (must be 0)": 0,
+    "(d) slope fits that returned NaN (must be 0)": 0,
+    "(b) stationarity-bound violations (must be 0)": 0,
+    "(b) number of (obj, eta, init, T) bound checks": 400,
+    "(b) median slack factor bound/observed": 3114640.703685389,
+    "(d) median empirical log-log slope of min||grad||^2 vs T (<= -1)": -10.0388949565607,
+    "(d) worst empirical slope (transient-dominated at short horizons)": -3.3625073273269463,
+    "(e) growth occurs exactly when eta > 2/L (sharp threshold)": true,
+    "(e) max |rho_empirical - rho_predicted| (exact 1-step ratio)": 4.440892098500626e-15,
+    "(e) eta multiples probed": [
+      0.5,
+      1.0,
+      1.5,
+      1.9,
+      1.99,
+      1.999,
+      2.001,
+      2.01,
+      2.1,
+      3.0
+    ],
+    "objectives": [
+      "quadratic",
+      "nonconvex_sin"
+    ],
+    "exact L (quadratic)": 4.0,
+    "upper-bound L (nonconvex)": 31.516902173324866
+  }
+}

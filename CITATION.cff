@@ -1,0 +1,8 @@
+cff-version: 1.2.0
+title: "Structure-Preserving Policy Gradient Optimization on Special Orthogonal Lie Algebras"
+message: "If you use this code, please cite the paper."
+authors:
+  - family-names: "K.C."
+    given-names: "Sooraj"
+  - family-names: "Mishra"
+    given-names: "Vivek"

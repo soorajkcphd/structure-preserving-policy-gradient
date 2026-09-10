@@ -1,0 +1,36 @@
+{
+  "name": "t10_exponential_witness",
+  "claim": "TH-10 / Prop prop:dichotomy_app(ii): L_F >= (mu^2/4) e^{2 mu R}; and TH-15 nilpotent contrast",
+  "passed": true,
+  "summary": {
+    "witness f: empirical sup ||grad f||_F by finite differences (<= 1)": 0.9999997715687041,
+    "witness f: empirical sup |Hess f[E,E]| for unit E (<= 1, attained)": 1.0000000827403708,
+    "identity u^T e^{rH} u = e^{mu r}, max abs error": 0.0,
+    "analytic d2F/dr2 vs finite differences, max rel error": 0.0006618955971738453,
+    "lower bound L_F >= (mu^2/4)e^{2muR} satisfied at every (mu,R)": true,
+    "selected k verified EXACT (|sin(y_k)-1| < 1e-20) at every (mu,R)": true,
+    "max |sin(y_k) - 1| over all rows": 6.402532129780334e-81,
+    "min ratio L_F / floor (must be >= 1)": 1.5625000000000002,
+    "sharp envelope 1 <= L_F/floor <= 4 over dense R grid": true,
+    "envelope observed range": [
+      1.5625000000000002,
+      4.0
+    ],
+    "growth rate d log L_F/dR from L_F_lower vs 2*mu, max rel error": 0.0008026524880506702,
+    "mu values tested": [
+      0.1,
+      0.25,
+      0.5,
+      1.0
+    ],
+    "largest mu*R reached": 759.3072740907872,
+    "largest log10(L_F) reached": 659.5259184132577,
+    "largest log10(k) (number of digits in the selected index)": 328.9647793382708,
+    "CONTRAST so(n): max |d2F| <= L_f + G_f = 2 at all radii up to 1000": true,
+    "CONTRAST so(n): observed max |d2F|": 0.3975050510973688,
+    "NILPOTENT rho(exp(tN)) == 1 for all t": true,
+    "NILPOTENT log-log slope of ||exp(tN)||_op, t>=100 (linear => 1)": 0.9999912719880029,
+    "NILPOTENT ||exp(tN)||_op / t at t=1e6 (-> 1)": 1.0000000000010003,
+    "mpmath available (needed for very large mu*R)": true
+  }
+}

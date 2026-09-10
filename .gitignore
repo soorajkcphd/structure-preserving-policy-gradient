@@ -1,0 +1,9 @@
+# Transcripts written by check_all.sh (they contain local absolute paths)
+check_all.log
+run_all.log
+
+# New sweep output; the result CSVs in data/ are tracked explicitly
+*_cells.csv
+!data/*_cells.csv
+
+__pycache__/
